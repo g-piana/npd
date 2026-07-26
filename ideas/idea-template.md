@@ -2,7 +2,8 @@
 
 > Created: YYYY-MM-DD | Status: `raw` / `investigating` / `validating` / `building` / `killed`
 > Origin: opportunity-log entry #___
-
+Ideas are cheap and most will die. 
+Date-prefixed filenames (2026-07-ehds-deidentification.md) let you see volume and recency at a glance without nested folders.
 ---
 
 ## 1. Trigger (from Stage 2)

@@ -1,14 +1,9 @@
 # NPD Process — Asset-Constrained, Demand-Triggered, Combinatorial Pipeline
 
 > **Purpose:** A repeatable ideation-to-validation process designed for a
-> solo technical founder with transferable technical depth (physics PhD,
-> applied math, ML/edge engineering) and a Python-native stack. Biased
-> toward regulatory-driven "why now" opportunities in **standalone digital
-> products** (SaaS, web-app, edge) that deliver value without the
-> founder's continuous domain involvement.
->
-> **Anti-goal:** Not a consulting practice with tooling. The product must
-> work without you in the room.
+> solo technical founder with deep domain expertise (physics PhD, 15yr
+> medtech), a specific tech stack, and a bias toward regulatory-driven
+> "why now" opportunities in digital products (SaaS, web-app, edge).
 
 ---
 
@@ -31,17 +26,12 @@
 
 **Frequency:** Do once, refresh quarterly.
 
-Maintain four lists in `asset-inventory.md`:
+Maintain three lists in `asset-inventory.md`:
 
-- **Transferable technical foundations:** Physics/math modeling, signal
-  processing, inverse problems, statistical methods, ML pipeline
-  engineering. These are domain-agnostic skills that port to *any*
-  physics-heavy or data-heavy industry.
-- **Domain familiarity** (not dependency): Medtech (deep, but actively
-  diversifying away), defense/aerospace, energy/renewables, industrial
-  IoT, drones/robotics, security/surveillance. The product must not
-  *require* deep domain knowledge to deliver value — domain familiarity
-  accelerates problem-finding, not product delivery.
+- **Domain access:** Industries where you have insider knowledge and
+  network (medtech workflows, hospital procurement, quality systems,
+  physics-heavy engineering, defense/aerospace where no certification
+  is required to sell).
 - **Deployable capabilities:** Tech you can ship in weeks (Python ecosystem,
   Django/DRF, FastAPI, HTMX, PostGres, PyTorch/CNNs, Nvidia Jetson,
   Arduino, applied math / physics modeling).
@@ -49,11 +39,6 @@ Maintain four lists in `asset-inventory.md`:
   LoRA fine-tuning, agentic architectures, graph modeling on PostGres).
 
 This is the search space. Everything downstream is filtered through it.
-
-**Critical filter:** For every idea, ask: "Does this product deliver value
-to a buyer who has never met me?" If the answer is no — if it only works
-because I'm the one explaining it or operating it — it's consulting, not
-a product. Kill it or redesign it.
 
 ---
 
@@ -81,26 +66,11 @@ uneconomical problems become solvable. Sources:
 - NVIDIA developer blog, Hugging Face trending
 - Hacker News, key technical newsletters
 
-### 2c. Workflow pain (in and beyond your network)
+### 2c. Workflow pain in your network
 
-Jobs-to-be-Done interviews with contacts across industries. Listen for
-workarounds — spreadsheets, manual double-checks, "the intern does it."
-Workarounds are proof of demand.
-
-**Within your network:** Former medtech colleagues, quality/regulatory
-people, defense contacts.
-
-**Expanding beyond your network:** To find problems in unfamiliar domains
-(energy, drones, robotics, security), use these entry points:
-- Industry-specific subreddits, forums, Slack/Discord communities (listen
-  before talking — look for complaints and workarounds)
-- Trade press for the target industry (e.g., PV Magazine for solar,
-  sUAS News for drones, The Robot Report for robotics)
-- EU-funded project repositories (CORDIS) — see what problems the EU is
-  paying to solve; those problems are real
-- LinkedIn industry groups where practitioners discuss operational pain
-- Conference talk recordings (often free) — speakers describe problems
-  they've solved, which reveals the shape of problems others still have
+Jobs-to-be-Done interviews with former colleagues, hospital contacts,
+quality/regulatory people. Listen for workarounds — spreadsheets, manual
+double-checks, "the intern does it." Workarounds are proof of demand.
 
 **Output:** Entries in `scanning/opportunity-log.md`.
 
@@ -146,28 +116,18 @@ For each idea card, complete section 3 of the template.
   process," not another startup.)
 - What can you claim that they **structurally cannot**?
 
-### Moat sources, ranked for standalone products
+### Moat sources, ranked for solo technical founder
 
-Product-embedded moats (preferred — they scale without you):
-1. Data flywheels (product generates its own training data over time)
-2. Physics/math depth baked into the core algorithm (hard for pure
-   software competitors to replicate)
-3. Network effects (each user makes the product better for others)
+1. Proprietary domain knowledge (hardest to copy)
+2. Data flywheels (product generates its own training data)
+3. Physics/math depth in the core algorithm
+4. Regulatory-adjacency know-how (understand the regulated world without
+   needing certification yourself)
 
-Founder-adjacent moats (useful for market entry, but don't depend on them):
-4. Regulatory-adjacency know-how (understand the *shape* of compliance
-   problems — transferable across regulated industries)
-5. Domain familiarity (accelerates sales conversations, not product value)
+### Kill signal
 
-### Kill signals
-
-- If the only differentiation is "better UX" or "AI-powered" — kill it.
-  Those are features, not moats.
-- If the product only works when *you* operate it or explain it — kill it
-  or redesign it. It's consulting disguised as a product.
-- If the moat depends entirely on domain knowledge that a competitor could
-  hire for — it's fragile. Prefer moats embedded in the product itself
-  (data, algorithms, network effects).
+If the only differentiation is "better UX" or "AI-powered" — kill it.
+Those are features, not moats.
 
 ---
 
@@ -179,13 +139,9 @@ Complete section 4 of the idea card. Four questions, one page max:
 2. **What budget line?** (Compliance budgets = easiest; "innovation" = worst.)
 3. **What's the cost of not buying?** (Fines, audit failure, downtime,
    FTE cost of workaround.)
-4. **Can you reach 10 of these buyers?** (Through your network, cold
-   outreach, communities, or content — not limited to existing contacts.)
-5. **Does the product deliver value without you?** (Could a buyer
-   self-serve, or does this require your personal expertise to operate?)
+4. **Can you reach 10 of these buyers through your existing network?**
 
 If any answer is vague → back to Stage 2 for more scanning.
-If the answer to #5 is "needs me" → redesign for self-service or kill.
 
 ---
 

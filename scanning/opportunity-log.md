@@ -22,11 +22,11 @@
 
 ## Log
 
-| # | Date added | Type | Trigger summary | Why now / deadline | Relevant domains | Asset fit (quick gut check) | Status | Notes |
-|---|-----------|------|-----------------|-------------------|-----------------|---------------------------|--------|-------|
-| 1 | | | | | | | open | |
-| 2 | | | | | | | open | |
-| 3 | | | | | | | open | |
+| #   | Date added | Type | Trigger summary | Why now / deadline | Relevant domains | Asset fit (quick gut check) | Status | Notes |
+| --- | ---------- | ---- | --------------- | ------------------ | ---------------- | --------------------------- | ------ | ----- |
+| 1   |            |      |                 |                    |                  |                             | open   |       |
+| 2   |            |      |                 |                    |                  |                             | open   |       |
+| 3   |            |      |                 |                    |                  |                             | open   |       |
 
 ---
 
