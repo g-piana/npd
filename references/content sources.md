@@ -11,6 +11,14 @@
 
 #### RSS from ArXiv
 
+`cs.LG` alone is 300+ papers/day; no amount of downstream discipline survives that. Replace the two category feeds with keyword-filtered API queries. The arXiv API supports boolean field queries and returns Atom, which Reader ingests fine. Concrete feeds to swap in (base `http://export.arxiv.org/api/query?`):
+
+- **Anomaly detection (your strongest fit):** `search_query=(cat:cs.LG+OR+cat:eess.SP)+AND+abs:%22anomaly+detection%22&sortBy=submittedDate&sortOrder=descending&max_results=25`
+- **Physics-informed / operators:** `search_query=abs:%22physics-informed%22+OR+abs:%22neural+operator%22&sortBy=submittedDate&sortOrder=descending&max_results=25`
+- **Predictive maintenance:** `search_query=abs:%22predictive+maintenance%22+OR+abs:%22remaining+useful+life%22&sortBy=submittedDate&sortOrder=descending&max_results=25`
+- **CRA-adjacent:** `search_query=cat:cs.CR+AND+(abs:SBOM+OR+abs:%22software+supply+chain%22)&sortBy=submittedDate&sortOrder=descending&max_results=25`
+
+
 Standard RSS Feed Suffixes
 
 Make sure your base URL starts with **`https://rss.arxiv.org`**: [[1](https://blog.arxiv.org/2024/01/31/attention-arxiv-users-re-implemented-rss/)]
